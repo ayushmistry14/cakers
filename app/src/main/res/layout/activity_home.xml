@@ -1,0 +1,941 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEF0"
+    tools:context=".home">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="false"
+        android:scrollbars="none"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="40dp"
+                    app:srcCompat="@drawable/menu1" />
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="38dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/popular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Popular"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bestseller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Best sellers"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/frame"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.341">
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Recommended"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="340dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="25.5dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#fbcedc"
+                app:cardCornerRadius="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/cake_1" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginTop="35dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Chocolate Cake"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginTop="70dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="₹300"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginTop="93dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Select"
+                    android:textSize="20sp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="340dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="25.5dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#f7ce74"
+                app:cardCornerRadius="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/cake2" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginTop="35dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Hazelnut Cake"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginTop="70dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="₹500"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginTop="93dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Select"
+                    android:textSize="20sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="340dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="25.5dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#fbcedc"
+                app:cardCornerRadius="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/cake3" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginTop="35dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Oreo Cake"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginTop="70dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="₹400"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginTop="93dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Select"
+                    android:textSize="20sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="340dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="25.5dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#f7ce74"
+                app:cardCornerRadius="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/cake7" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginTop="35dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Fudge Cake"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginTop="70dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="₹180"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginTop="93dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Select"
+                    android:textSize="20sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="340dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="25.5dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#fbcedc"
+                app:cardCornerRadius="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/cake5" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginTop="35dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Strawberry Cheese Cake"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginTop="80dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="₹210"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginTop="93dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Select"
+                    android:textSize="20sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="340dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="25.5dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#f7ce74"
+                app:cardCornerRadius="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/cake1" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginTop="35dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Ferrero Roacher cake"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginTop="80dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="₹650"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginTop="93dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Select"
+                    android:textSize="20sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="340dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="25.5dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#fbcedc"
+                app:cardCornerRadius="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/cake9" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginTop="35dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Italian Pastry"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginTop="70dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="₹260"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginTop="93dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Select"
+                    android:textSize="20sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="340dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="25.5dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#f7ce74"
+                app:cardCornerRadius="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/cake10" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginTop="35dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Red velvet Cake"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginTop="70dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="₹450"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginTop="93dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Select"
+                    android:textSize="20sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="340dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="25.5dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#fbcedc"
+                app:cardCornerRadius="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/cheesecake3" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginTop="35dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Chocolate Ceheese Cake"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginTop="80dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="₹400"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginTop="93dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Select"
+                    android:textSize="20sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="340dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="25.5dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#f7ce74"
+                app:cardCornerRadius="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/cake13" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginTop="35dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Ras-Malai Cake"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginTop="70dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="₹550"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginTop="93dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Select"
+                    android:textSize="20sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="340dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="25.5dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#fbcedc"
+                app:cardCornerRadius="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/cake6" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="175dp"
+                    android:layout_marginTop="35dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Oreo Chesse Cake"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginTop="70dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="₹210"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginTop="93dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Select"
+                    android:textSize="20sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="340dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="25.5dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#f7ce74"
+                app:cardCornerRadius="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/cake14" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginTop="35dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Pinnata Cake"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginTop="70dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="₹500"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginTop="93dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Select"
+                    android:textSize="20sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="340dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="25.5dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#fbcedc"
+                app:cardCornerRadius="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/cake11" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginTop="35dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Nutella Cake"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginTop="70dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="₹540"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginTop="93dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Select"
+                    android:textSize="20sp" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="340dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="25.5dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="120dp"
+                android:backgroundTint="#f7ce74"
+                app:cardCornerRadius="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/cake8" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginTop="35dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Vanilla Pastry"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginTop="70dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="₹150"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginTop="93dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Select"
+                    android:textSize="20sp" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98">
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center|left"
+            android:text="Total : 0"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/qty"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center|left"
+            android:text="Quantity : 0"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975"
+        app:srcCompat="@drawable/next2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
