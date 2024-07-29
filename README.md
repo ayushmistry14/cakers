@@ -44,3 +44,11 @@ To get started with the Cake Shop UI App, follow these steps:
 1. **Clone the repository:**
    ```sh
    git clone https://github.com/yourusername/cake-shop-ui-app.git
+### Screen Shots
+![](screenshots/welcome.jpg)
+![](screenshots/login.jpg)
+![](screenshots/signup.jpg)
+![](screenshots/forgot.jpg)
+![](screenshots/home.jpg)
+![](screenshots/populer.jpg)
+![](screenshots/payment.jpg)
